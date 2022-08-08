@@ -306,7 +306,7 @@ local weapons_recipe = {
      },
 }
 
-Config.workbench_default_model = 'gr_prop_gr_bench_04a'
+Config.workbench_default_model = 'gr_prop_gr_bench_01b'
 
 Config.workbenches = {
      -- items
@@ -329,23 +329,66 @@ Config.workbenches = {
           radius = 3.0
      },
      {
-          table_model = 'gr_prop_gr_bench_04b',
-          coords = vector3(-59.5, 6388.77, 30.49),
-          rotation = vector3(0.0, 0.0, 225.0),
+          table_model = "imp_prop_impexp_mechbench",
+          coords = vector3(2355.84, 3118.2, 47.2),
+          item_show_case_offset = vector3(0.0, 0.0, 1.3),
+          rotation = vector3(0.0, 0.0, -10),
+          -- just use either job or gang using both at same time won't work.
           job = {
                allowed_list = {},
                allowed_grades = {}
           },
+          -- gang = {
+          --      allowed_list = {},
+          --      allowed_grades = {}
+          -- },
           categories = { Config.categories.misc, Config.categories.medical },
           recipes = { misc_recipe, medial },
           radius = 3.0
      },
      -- gun
      {
-          table_model = 'gr_prop_gr_bench_02b',
-          coords = vector3(68, 3684.62, 38.83),
-          item_show_case_offset = vector3(0.0, 0.0, 1.2),
-          rotation = vector3(0.0, 0.0, 235.0),
+          table_model = "gr_prop_gr_bench_04b",
+          coords = vector3(-2166.63, 5196.04, 15.9),
+          item_show_case_offset = vector3(0.0, 0.0, 1.3),
+          rotation = vector3(0.0, 0.0, 190),
+          -- just use either job or gang using both at same time won't work.
+          job = {
+               allowed_list = {},
+               allowed_grades = {}
+          },
+          -- gang = {
+          --      allowed_list = {},
+          --      allowed_grades = {}
+          -- },
+          categories = { Config.categories.misc, Config.categories.medical },
+          recipes = { misc_recipe, medial },
+          radius = 3.0
+     },
+     {
+          table_model = "gr_prop_gr_bench_04b",
+          coords = vector3(-1106.06, -1642.35, 3.64),
+          item_show_case_offset = vector3(0.0, 0.0, 0.0),
+          rotation = vector3(0.0, 0.0, 215),
+          -- just use either job or gang using both at same time won't work.
+          job = {
+               allowed_list = {},
+               allowed_grades = {}
+          },
+          -- gang = {
+          --      allowed_list = {},
+          --      allowed_grades = {}
+          -- },
+          categories = { Config.categories.misc, Config.categories.medical },
+          recipes = { misc_recipe, medial },
+          radius = 3.0
+     },
+     -- Weapon Crafting
+     {
+          table_model = 'gr_prop_gr_bench_01b', 
+          coords = vector3(1394.06, 3641.1, 33.90),
+          item_show_case_offset = vector3(0.0, 0.0, -5.0),
+          rotation = vector3(0.0, 0.0, 20.0),
           job = {
                allowed_list = {},
                allowed_grades = {}
@@ -353,8 +396,51 @@ Config.workbenches = {
           categories = { Config.categories.weapons },
           recipes = { weapons_recipe },
           radius = 3.0
-     }, {
-          table_model = 'gr_prop_gr_bench_02b',
+     },
+     -- Island Lighthouse
+     {
+          table_model = 'gr_prop_gr_bench_01b',
+          coords = vector3(3612.31, 5024.85, 10.35),
+          item_show_case_offset = vector3(0.0, 0.0, 0.0),
+          rotation = vector3(0.0, 0.0, 110.0),
+          job = {
+               allowed_list = {},
+               allowed_grades = {}
+          },
+          categories = { Config.categories.weapons },
+          recipes = { weapons_recipe },
+          radius = 3.0
+     },
+          -- innocence boulevard
+     {
+          table_model = 'gr_prop_gr_bench_01b',
+          coords = vector3(903.5, -1688.65, 46.35),
+          item_show_case_offset = vector3(0.0, 0.0, 0.0),
+          rotation = vector3(0.0, 0.0, 175.0),
+          job = {
+               allowed_list = {},
+               allowed_grades = {}
+          },
+          categories = { Config.categories.weapons },
+          recipes = { weapons_recipe },
+          radius = 3.0
+     },
+     --beach building
+     {
+          table_model = 'gr_prop_gr_bench_01b',
+          coords = vector3(-1154.35, -1430.3, 10.285),
+          item_show_case_offset = vector3(0.0, 0.0, -5.0),
+          rotation = vector3(0.0, 0.0, 125.0),
+          job = {
+               allowed_list = {},
+               allowed_grades = {}
+          },
+          categories = { Config.categories.weapons },
+          recipes = { weapons_recipe },
+          radius = 3.0
+     },
+     {
+          table_model = 'gr_prop_gr_bench_01b',
           coords = vector3(2939.04, 4623.81, 47.72),
           item_show_case_offset = vector3(0.0, 0.0, 1.2),
           rotation = vector3(0.0, 0.0, 47.0),
